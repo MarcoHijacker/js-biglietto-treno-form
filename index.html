@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+	<head>
+		<meta charset="utf-8">
+		<title>Biglietteria Ferroviaria (Form Edition)</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0 ">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+		<link href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+ 		<link rel="stylesheet" href="css/main.css">
+	</head>
+	<body>
+
+		<main>
+
+			<!-- Container generale del form -->
+			<div class="containerform">
+				<!-- Input name/km -->
+				<label for="name">Nome:</label>
+				<input id="name" type="text" name="name" value="" placeholder="Nome"><br>
+				<label for="kmToGo">Km da percorrere:</label>
+				<input id="kmToGo" type="number" name="kmToGo" value="" placeholder="Num. Km"><br>
+				<!-- Input option -->
+				<label for="fasciaEta">Seleziona fasce d'età:</label>
+				<select id="fasciaEta" name="fasciaEta">
+				  <option value="maggiorenne">Maggiorenne</option>
+				  <option value="minorenne">Minorenne</option>
+				  <option value="over65">Over 65</option>
+				</select><br>
+				<!-- Area bottoni -->
+				<button id="submitForm" type="button" name="button">Invia</button>
+				<button id="voidForm" type="button" name="button">Annulla</button>
+
+				<!-- Tabella resoconto biglietto -->
+				<table id="ticketTable" class="ticketTable hidden">
+					<tr class="firstrow">
+						<th>Nome Passeggero</th>
+						<th>Numero Treno</th>
+						<th>Numero Carrozza</th>
+						<th>Prezzo Calcolato</th>
+						<th>Fascia di età</th>
+					</tr>
+					<tr class="secondrow">
+						<th id="ticketPasseggero"></th>
+						<th id="ticketTreno"></th>
+						<th id="ticketCarrozza"></th>
+						<th id="ticketPrezzo"></th>
+						<th id="ticketEta"></th>
+					</tr>
+				</table>
+			</div>
+
+		</main>
+
+		<!-- Script JS  -->
+		<script type="text/javascript" src="js/script.js"></script>
+	</body>
+
+</html>

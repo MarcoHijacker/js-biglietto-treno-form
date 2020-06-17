@@ -1,0 +1,42 @@
+/* Biglietteria Ferroviaria (Form Edition) CSS */
+
+/* Generali */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Exo 2', sans-serif;
+  width: 100%;
+  height: 100vh;
+  background-color: #cecece;
+}
+main {
+  padding: 20px;
+}
+
+/* Tabella resoconto biglietto */
+.ticketTable {
+  border: solid 1px black;
+  padding: 5px;
+  margin: 10px 0;
+  background-color: #004a8b;
+}
+.ticketTable th {
+  padding: 0 5px;
+}
+.firstrow {
+  color: white;
+}
+.secondrow {
+  color: orange;
+}
+.show {
+  opacity: 1;
+  transition: 0.5s;
+}
+.hidden {
+  opacity: 0;
+  transition: 0.5s;
+}
